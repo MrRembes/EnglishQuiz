@@ -29,16 +29,16 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `ang_19_09_2023` (
   `id` int(3) NOT NULL,
-  ` słówko` varchar(50) NOT NULL,
-  ` popr.odp_1` varchar(50) NOT NULL,
-  ` popr.odp_2` varchar(50) DEFAULT NULL
+  `słówko` varchar(50) NOT NULL,
+  `popr.odp_1` varchar(50) NOT NULL,
+  `popr.odp_2` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `ang_19_09_2023`
 --
 
-INSERT INTO `ang_19_09_2023` (`id`, ` słówko`, ` popr.odp_1`, ` popr.odp_2`) VALUES
+INSERT INTO `ang_19_09_2023` (`id`, `słówko`, `popr.odp_1`, `popr.odp_2`) VALUES
 (1, 'Personal data', 'Dane osobiste', NULL),
 (2, 'Gender', 'Płeć', NULL),
 (3, 'Male', 'Mężczyzna', NULL),
