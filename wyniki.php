@@ -7,11 +7,13 @@
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
 
-    <link rel="stylesheet" href="wyniki.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     
+
+ <h1> Oto twoje wyniki </h1>
     <?php 
 
     session_start();

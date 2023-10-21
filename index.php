@@ -8,9 +8,14 @@
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
 
-    <link rel="stylesheet" href="index.css"> <!-- CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- CSS -->
 
 </head>
+
+<nav>
+
+
+<nav>
 
 <body>
 
@@ -107,6 +112,11 @@
 
 // Code by Najdz3l & MrRembes \\
     ?>
+
+<footer>
+    <a> Powered by MrRembes and Najdz3l </a>
+</footer>
+
 </body>
 
 </html>
