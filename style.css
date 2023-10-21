@@ -35,6 +35,9 @@ div {
   input [type=text]{
     width: 150px;
   }
+  input:focus[type=text]{
+    width: 95%;
+  }
 
   input[type = 'submit']{
     text-align: center;

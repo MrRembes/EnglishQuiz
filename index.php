@@ -89,10 +89,10 @@
     echo "<h2>Przetłumacz na polski: </h2>";
     
     
-    function tip() {
-        $fstchar = mb_substr($popr_odp[$i], 0, 1);
-        return $fstchar;
-    }
+    // function tip() {
+    //     $fstchar = mb_substr($popr_odp[$i], 0, 1);
+    //     return $fstchar;
+    // }
 
     for ($i = 0; $i < $ilosc_pytan; $i++) {
     
