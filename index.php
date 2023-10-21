@@ -104,13 +104,14 @@
         
 
         // Wyświetlanie pierwszej litery z popr_odp \\
-        echo '<button onclick=" ">Podpowiedź</button>';
+       // echo '<button onclick=" ">Podpowiedź</button>';
 
         echo "<br />";
 
 
         echo "<input type='text'"; 
         echo "name='odpowiedz$i'"; // Numer słówka
+        echo "maxlenght = '50'";
         echo "required autocomplete='off'/><br />"; // autocomplete='off' bez odpowiedzi
     }
     echo "<br /><input type='submit' value='Wyślij' />";
