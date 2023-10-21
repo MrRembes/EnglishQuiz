@@ -63,6 +63,10 @@
 // Code by Najdz3l & MrRembes \\
     ?>
     </div>
+    
+    <footer>
+    <a> Powered by MrRembes and Najdz3l </a>
+</footer>
 </body>
 </html>
 
