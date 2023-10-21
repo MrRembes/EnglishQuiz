@@ -87,12 +87,6 @@
     echo "<center><div>";
     echo '<form action="wyniki.php" method="post">';
     echo "<h2>Przetłumacz na polski: </h2>";
-    
-    
-    // function tip() {
-    //     $fstchar = mb_substr($popr_odp[$i], 0, 1);
-    //     return $fstchar;
-    // }
 
     for ($i = 0; $i < $ilosc_pytan; $i++) {
     
@@ -104,7 +98,10 @@
         
 
         // Wyświetlanie pierwszej litery z popr_odp \\
-        echo '<button onclick=" ">Podpowiedź</button>';
+        $fstchar = mb_substr($popr_odp[$i], 0, 1);
+        echo "<button type='button' onclick=''>Podpowiedź</button>";
+
+
 
         echo "<br />";
 
@@ -115,10 +112,20 @@
     }
     echo "<br /><input type='submit' value='Wyślij' />";
     echo "</form></div></center>";
+    ?>
 
-// echo "<button type='button'>".$popr_odp[$i]."</button>";
+<script>
+        function hint() {
+            $fstchar = mb_substr($popr_odp[$i], 0, 1);
+            echo $fstchar;
+        }
+</script>
+
+<?php
+// echo "<button type='button'>".$popr_odp[$i]."</button>"; echo '<button type="button">Podpowiedź</button>';
 // $fstchar = mb_substr($popr_odp[$i], 0, 1);
-// echo $fstchar;
+// echo $fstchar; 
+// onclick=""
 
 
 // Wybór tabeli na początku \\
@@ -129,7 +136,7 @@
 // github \\
 
 // Code by Najdz3l & MrRembes \\
-    ?>
+?>
 
 <footer>
     <a> Powered by MrRembes and Najdz3l </a>
