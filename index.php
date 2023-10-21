@@ -104,7 +104,7 @@
 // Zrobić CSS \\
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
 // github \\
-// tak
+
 // Code by Najdz3l & MrRembes \\
     ?>
 </body>
