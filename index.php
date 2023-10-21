@@ -79,23 +79,27 @@
 
     ?>
 
-    <?php 
-    //formulash \\
-    $_SESSION['slowo'] = $slowo;
-    $_SESSION['popr_odp'] = $popr_odp;
-    $_SESSION['popr_odp2'] = $popr_odp_2;
-    $_SESSION['ilosc_pytan'] = $ilosc_pytan;
-    echo "<center><div>";
-    echo '<form action="wyniki.php" method="post">';
-    echo "<h2>Przetłumacz na polski: </h2>";
+    <?php
     
+    function tip() {
+        $fstchar = mb_substr($popr_odp[$i], 0, 1);
+        return $fstchar;
+    }
+
     for ($i = 0; $i < $ilosc_pytan; $i++) {
     
         echo $i+1;
         echo '. ';
 
         print_r ($slowo[$i]); 
+        echo "&nbsp";
+        
+
+        // Wyświetlanie pierwszej litery z popr_odp \\
+        echo '<button onclick=" ">Podpowiedź</button>';
+
         echo "<br />";
+
 
         echo "<input type='text'"; 
         echo "name='odpowiedz$i'"; // Numer słówka
@@ -104,10 +108,16 @@
     echo "<br /><input type='submit' value='Wyślij' />";
     echo "</form></div></center>";
 
+// echo "<button type='button'>".$popr_odp[$i]."</button>";
+// $fstchar = mb_substr($popr_odp[$i], 0, 1);
+// echo $fstchar;
+
+
 // Wybór tabeli na początku \\
 // Wybór czy z ang-pl czy pl-ang \\
 // Zrobić CSS \\
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
+// W wyniki.php niech wyswietla pierwsza litere z slowo i poprawne odpowiedzi z duzej \\
 // github \\
 
 // Code by Najdz3l & MrRembes \\
@@ -118,5 +128,4 @@
 </footer>
 
 </body>
-
 </html>
