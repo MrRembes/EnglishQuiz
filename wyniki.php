@@ -12,7 +12,7 @@
 
 <body>
     
-
+<div class = 'wynik'>
  <h1> Oto twoje wyniki </h1>
     <?php 
 
@@ -39,7 +39,7 @@
     }
 
 // Zliczanie uzyskanych puntków \\
-$points = 0;
+    $points = 0;
 
     for ($i = 0; $i < $ilosc_pytan; $i++) {
         if (($odpowiedzi[$i] == $popr_odp[$i]) || ($odpowiedzi[$i] == $popr_odp_2[$i])) {
@@ -62,6 +62,7 @@ $points = 0;
 
 // Code by Najdz3l & MrRembes \\
     ?>
+    </div>
 </body>
 </html>
 

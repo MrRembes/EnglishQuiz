@@ -84,7 +84,7 @@
     $_SESSION['popr_odp'] = $popr_odp;
     $_SESSION['popr_odp2'] = $popr_odp_2;
     $_SESSION['ilosc_pytan'] = $ilosc_pytan;
-    echo "<center><div>";
+    echo "<div class = 'pytania'>";
     echo '<form action="wyniki.php" method="post">';
     echo "<h2>Przetłumacz na polski: </h2>";
     
