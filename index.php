@@ -7,6 +7,7 @@
     <meta name="description" content="opis" />
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="style.css"> <!-- CSS -->
 
@@ -133,7 +134,7 @@
     ?>
 
 <footer>
-    <a> Powered by MrRembes and Najdz3l </a>
+    <a> Powered by MrRembes and Najdz3l</a>
 </footer>
 
 </body>
