@@ -71,7 +71,7 @@ body {
     min-height: 100%;
 }
 
-.pytania>h2 {
+.pytania>form>h2 {
     color: plum;
     text-align:center;
     font-family: 'Comic Sans MS';
@@ -140,14 +140,15 @@ input:focus[type=text]{
   font-size: 35px;
 }
 .navi>#ANG>form>input[type = 'submit']{  
-  background-image: url(imperator.jpg);
+  /*background-image: url(imperator.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center center;  
+  background-position: center center;
   color: #F00;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 5px black;
+  */
   font-size: 20px;
-  width: 150px;
+  width: auto;
 }
 
 nav {
