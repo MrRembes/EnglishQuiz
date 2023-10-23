@@ -7,17 +7,43 @@
     <meta name="description" content="opis" />
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="style.css"> <!-- CSS -->
 
 </head>
-
-<nav>
-
-
-<nav>
-
 <body>
+    <div class = "navi">
+        <h2> Ang 00.00.00: </h2>
+            <div id = ANG>
+            <form action="index.php">
+                <input type="submit" value="ANG -> PL">
+            </form>
+            <form action="index.php">
+                <input type="submit" value="PL -> ANG">
+            </form>
+            </div>
+        <h2> Ang 00.00.00: </h2>
+            <div id = ANG>
+            <form action="index.php">
+                <input type="submit" value="ANG -> PL">
+            </form>
+            <form action="index.php">
+                <input type="submit" value="PL->ANG">
+            </form>
+            </div>
+        <h2> Ang 00.00.00: </h2>
+            <div id = ANG>
+            <form action="index.php">
+                <input type="submit" value="ANG -> PL">
+            </form>
+            <form action="index.php">
+                <input type="submit" value="PL -> ANG">
+            </form>
+            </div>
+</div>
+
+</body>
 
     <?php
     
@@ -95,16 +121,8 @@
 
         print_r ($slowo[$i]); 
         echo "&nbsp";
-        
-
-        // Wyświetlanie pierwszej litery z popr_odp \\
-        $fstchar = mb_substr($popr_odp[$i], 0, 1);
-        echo "<button type='button' onclick=''>Podpowiedź</button>";
-
-
 
         echo "<br />";
-
 
         echo "<input type='text'"; 
         echo "name='odpowiedz$i'"; // Numer słówka
@@ -112,24 +130,9 @@
     }
     echo "<br /><input type='submit' value='Wyślij' />";
     echo "</form></div></center>";
-    ?>
 
-<script>
-        function hint() {
-            $fstchar = mb_substr($popr_odp[$i], 0, 1);
-            echo $fstchar;
-        }
-</script>
-
-<?php
-// echo "<button type='button'>".$popr_odp[$i]."</button>"; echo '<button type="button">Podpowiedź</button>';
-// $fstchar = mb_substr($popr_odp[$i], 0, 1);
-// echo $fstchar; 
-// onclick=""
-
-
-// Wybór tabeli na początku \\
-// Wybór czy z ang-pl czy pl-ang \\
+// Wybór tabeli na początku \\ Podłączyć \\
+// Wybór czy z ang-pl czy pl-ang \\ Podłączyć \\
 // Zrobić CSS \\
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
 // W wyniki.php niech wyswietla pierwsza litere z slowo i poprawne odpowiedzi z duzej \\
@@ -139,8 +142,7 @@
 ?>
 
 <footer>
-    <a> Powered by MrRembes and Najdz3l </a>
+    <a> Powered by MrRembes and Najdz3l</a>
 </footer>
 
-</body>
 </html>
