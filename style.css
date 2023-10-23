@@ -3,11 +3,24 @@ html, body{
   padding: 0;
   height: 100%;
 }
-@media screen and (max-width: 532px) {
-  .pytania, .wynik{
+@media screen and (max-width: 342px) {
+  .pytania, .wynik, .navi{
     width: 80%;
     max-width: 350px;
-    padding-bottom: 80px ;    
+    padding-bottom: 100px ;
+  }
+  footer{
+    height: 150px;
+  }
+  input [type=text]{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 532px) {
+  .pytania, .wynik, .navi{
+    width: 80%;
+    max-width: 350px;
+    padding-bottom: 80px ;
   }
   footer{
     height: 80px;
@@ -18,7 +31,7 @@ html, body{
 }
 
 @media screen and (min-width:532px) and (max-width: 1200px) {
-  .pytania, .wynik{
+  .pytania, .wynik, .navi{
     width: 40%;
     min-width: 250px;
     padding-bottom: 50px;
@@ -31,7 +44,7 @@ html, body{
   }
 }
 @media screen and (min-width: 1200px) {
-  .pytania, .wynik{
+  .pytania, .wynik, .navi{
     width: 25%;
     padding-bottom: 50px;    
   }
@@ -49,81 +62,110 @@ body {
     background-repeat: no-repeat;
     background-position: center center;  
     background-attachment: fixed;
+    clear: both;    
+    float: left;
     width: 100%;
-    text-align:center;
     font-size: 30px;
     font-family: Verdana;
     color: lightgreen;
     min-height: 100%;
 }
 
-h2 {
+.pytania>h2 {
     color: plum;
     text-align:center;
     font-family: 'Comic Sans MS';
     font-size: 30px;
 }
-
-.pytania {
-    background-color: rgba(0,0,0,0.4);
-    color: whitesmoke;
-    font-family: Verdana;
-    text-align:left;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 30px;    
-    margin: auto;
-    
-  }
-.wynik {
+.pytania, .wynik, .navi{
   background-color: rgba(0,0,0,0.4);
   color: whitesmoke;
   font-family: Verdana;
-  text-align:left;
-  padding: 20px;
+  padding-left: 20px;  
+  padding-right: 20px;
   padding-top: 0px;
+}
+.pytania {    
+    text-align: center;
+    border-radius: 30px;    
+    margin: auto;    
+  }
+  .pytania>form{
+    display: inline-block;
+    text-align: center;
+  }
+.wynik { 
+  text-align:left;
   border-radius: 30px;    
   margin: auto;
   text-transform: capitalize;
 }
+
+.navi{
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  padding: 20px;
+  vertical-align: middle; 
+  border-radius: 20px;
+}
+
 .wynik>h1{
   color: lightblue;
 }
-.wynik>input[type=button], .pytania>input[type=button]{
+.wynik>input[type=button],
+.pytania>input[type=button]{
+  text-align: center;
   margin: auto;
 }
 
-  input{
-    padding: 5px;
-    background-color: #eee;
-    border-radius: 10px;
-  }
+input{
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 10px;
+}
 
-  
-  input:focus[type=text]{
-    width: 95%;
-  }
 
-  input[type = 'submit']{
-    text-align: center;
-    font-size: 20px;
-    vertical-align: middle;
-  }
+input:focus[type=text]{
+  width: 95%;
+}
+
+.wynik>form>input[type = 'submit'],
+.pytania>form>input[type = 'submit'],
+.navi>#ANG>form>input[type = 'submit']{
+  height: 50px;
+  margin: 10px;
+  width: 70%;
+  font-weight: bold;
+  font-size: 35px;
+}
+.navi>#ANG>form>input[type = 'submit']{  
+  background-image: url(imperator.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  color: #F00;
+  text-shadow: 0 0 10px black;
+  font-size: 20px;
+  width: 150px;
+}
 
 nav {
     text-align: left;
 }
 
+
 footer {
+    clear: both;
     position: fixed;
     width: 100%;
     background-color: black;
     color: #22F;
     text-align: center;
     bottom: 0;
-    padding-top:0;
-    padding-left: 0;
-    padding-right: 0;
+    padding:0;
     vertical-align: middle;    
+}
+#ANG{
+  display: inline-flex;
 }
