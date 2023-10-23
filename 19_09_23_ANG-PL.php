@@ -14,9 +14,12 @@
 </head>
 
 <nav>
+<!-- Dodać button powrót -->
+    <form action="index.php">
+        <input type="submit" value="Powrót">
+    </form>
 
-
-<nav>
+</nav>
 
 <body>
 
