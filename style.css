@@ -143,12 +143,12 @@ input:focus[type=text]{
   /*background-image: url(imperator.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center;  
   color: #F00;
-  text-shadow: 0 0 5px black;
   */
+  text-shadow: 0 0 10px black;
   font-size: 20px;
-  width: auto;
+  width: 150px;
 }
 
 nav {
