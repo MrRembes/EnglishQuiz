@@ -3,20 +3,21 @@ html, body{
   padding: 0;
   height: 100%;
 }
+/* RESPONSYWNA CZĘŚĆ STRONY */
 @media screen and (max-width: 342px) {
   #pytania, #wynik, #navi{
     width: 80%;
     max-width: 350px;
-    padding-bottom: 100px ;
+    padding-bottom: 120px ;
   }
   footer{
-    height: 150px;
+    height: 120px;
   }
   input [type=text]{
     width: 60%;
   }
 }
-@media screen and (max-width: 532px) {
+@media screen and (min-width: 342px) and (max-width: 532px) {
   #pytania, #wynik, #navi{
     width: 80%;
     max-width: 350px;
@@ -35,6 +36,7 @@ html, body{
     width: 40%;
     min-width: 250px;
     padding-bottom: 50px;
+    min-width: 345px;
   }
   footer{
     height: 40px;
@@ -43,10 +45,11 @@ html, body{
     width: 150px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   #pytania, #wynik, #navi{
     width: 25%;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
+    min-width: 450px;
   }
   footer{    
     height: 40px;
@@ -114,7 +117,7 @@ body {
 }
 
 #wynik>h1{
-  color: lightblue;
+  color: #44F;
 }
 #wynik>input[type=button],
 #pytania>input[type=button]{
@@ -124,6 +127,7 @@ body {
 #wynik>input[type=button]:hover,
 #pytania>input[type=button]:hover{
   cursor: pointer;
+  background-color: #55F;
 }
 
 input{
@@ -150,6 +154,7 @@ input:focus[type=text]{
 #wynik>form>input[type = 'submit']:hover,
 #pytania>form>input[type = 'submit']:hover{
   cursor: pointer;
+  background-color: #66F;
 }
 #navi>.ANG>form>input[type = 'submit']{  
   /*background-image: url(imperator.jpg);
@@ -158,7 +163,7 @@ input:focus[type=text]{
   background-position: center center;  
   color: #F00;
   */
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 5px black;
   font-size: 20px;
   width: 150px;
 }
@@ -174,6 +179,10 @@ nav>form>input{
 }
 nav>form>input:hover{
   cursor: pointer;
+  background-color: #55F;
+}
+@media screen and (max-width: 550px) {
+  
 }
 
 footer {
@@ -194,4 +203,5 @@ footer {
 }
 .ANG>form>input:hover{
   cursor: pointer;
+  background-color: #55F;
 }
