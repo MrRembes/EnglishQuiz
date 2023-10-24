@@ -23,6 +23,8 @@
             <form action="19_09_23_ANG-PL.php">
                 <input type="submit" value="ANG -> PL">
             </form>
+            </div>
+            <div class = ANG>
             <form action="index.php">
                 <input type="submit" value="PL -> ANG">
             </form>
@@ -32,6 +34,8 @@
             <form action="index.php">
                 <input type="submit" value="ANG -> PL">
             </form>
+            </div>
+            <div class = ANG>
             <form action="index.php">
                 <input type="submit" value="PL->ANG">
             </form>
@@ -41,6 +45,8 @@
             <form action="index.php">
                 <input type="submit" value="ANG -> PL">
             </form>
+            </div>
+            <div class = ANG>
             <form action="index.php">
                 <input type="submit" value="PL -> ANG">
             </form>

@@ -121,6 +121,10 @@ body {
   text-align: center;
   margin: auto;
 }
+#wynik>input[type=button]:hover,
+#pytania>input[type=button]:hover{
+  cursor: pointer;
+}
 
 input{
   padding: 5px;
@@ -135,7 +139,7 @@ input:focus[type=text]{
 
 #wynik>form>input[type = 'submit'],
 #pytania>form>input[type = 'submit'],
-#navi>#ANG>form>input[type = 'submit']{
+#navi>.ANG>form>input[type = 'submit']{
   height: 50px;
   margin: 10px;
   width: 70%;
@@ -143,7 +147,11 @@ input:focus[type=text]{
   font-family: "Merriweather";
   font-size: 35px;
 }
-#navi>#ANG>form>input[type = 'submit']{  
+#wynik>form>input[type = 'submit']:hover,
+#pytania>form>input[type = 'submit']:hover{
+  cursor: pointer;
+}
+#navi>.ANG>form>input[type = 'submit']{  
   /*background-image: url(imperator.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -164,7 +172,9 @@ nav {
 nav>form>input{
   font-size: 22px;
 }
-
+nav>form>input:hover{
+  cursor: pointer;
+}
 
 footer {
     clear: both;
@@ -178,6 +188,10 @@ footer {
     vertical-align: middle;
     font-family: "Merriweather", serif;
 }
-#ANG{
+.ANG{
   display: inline-flex;
+  font-family: "Merriweather", serif;
+}
+.ANG>form>input:hover{
+  cursor: pointer;
 }
