@@ -3,6 +3,21 @@ html, body{
   padding: 0;
   height: 100%;
 }
+body {
+    background-image: url('flag_brick.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    background-attachment: fixed;
+    clear: both;    
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Roboto";
+    color: lightgreen;
+    min-height: 100%;
+}
+
 /* RESPONSYWNA CZĘŚĆ STRONY */
 @media screen and (max-width: 342px) {
   #pytania, #wynik, #navi{
@@ -59,21 +74,7 @@ html, body{
   }
 }
 
-body {
-    background-image: url('flag_brick.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center center;  
-    background-attachment: fixed;
-    clear: both;    
-    float: left;
-    width: 100%;
-    font-size: 30px;
-    font-family: "Roboto";
-    color: lightgreen;
-    min-height: 100%;
-}
-
+ /* Statyczna część strony */
 #pytania>form>h2 {
     color: plum;
     text-align:center;
