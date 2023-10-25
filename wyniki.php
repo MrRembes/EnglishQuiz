@@ -52,8 +52,8 @@
     }
 
     echo "Uzyskane punkty: ".$points;
-
     ?>
+
     <form action="javascript:history.back()" method="post">
     <input type='submit' value='Jeszcze Raz' />
     </form>

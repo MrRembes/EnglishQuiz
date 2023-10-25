@@ -92,9 +92,7 @@ body {
   padding-top: 0px;
   border-radius: 30px;    
 }
-#pytania {    
-    clear: both;
-    float:inline-end;
+#pytania {
     text-align: center;
   }
   #pytania>form{
