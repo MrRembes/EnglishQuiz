@@ -133,7 +133,8 @@ body {
 
 input{
   padding: 5px;
-  background-color: #eee;
+  background-color: #333;
+  color: whitesmoke;
   border-radius: 10px;
 }
 
@@ -202,6 +203,9 @@ footer {
   display: inline-flex;
   font-family: "Merriweather", serif;
 }
+
+
+
 .ANG>form>input:hover{
   cursor: pointer;
   background-color: #55F;
