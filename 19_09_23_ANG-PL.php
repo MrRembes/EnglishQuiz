@@ -8,15 +8,22 @@
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Czcionki Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css"> <!-- CSS -->
 
 </head>
 
 <nav>
+<!-- Dodać button powrót -->
+    <form action="index.php">
+        <input type="submit" value="Powrót">
+    </form>
 
-
-<nav>
+</nav>
 
 <body>
 
@@ -85,7 +92,7 @@
     $_SESSION['popr_odp'] = $popr_odp;
     $_SESSION['popr_odp2'] = $popr_odp_2;
     $_SESSION['ilosc_pytan'] = $ilosc_pytan;
-    echo "<div class = 'pytania'>";
+    echo "<div id = 'pytania'>";
     echo '<form action="wyniki.php" method="post">';
     echo "<h2>Przetłumacz na polski: </h2>";
     

@@ -3,21 +3,37 @@ html, body{
   padding: 0;
   height: 100%;
 }
+body {
+    background-image: url('flag_brick.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    background-attachment: fixed;
+    clear: both;    
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Roboto";
+    color: lightgreen;
+    min-height: 100%;
+}
+
+/* RESPONSYWNA CZĘŚĆ STRONY */
 @media screen and (max-width: 342px) {
-  .pytania, .wynik, .navi{
+  #pytania, #wynik, #navi{
     width: 80%;
     max-width: 350px;
-    padding-bottom: 100px ;
+    padding-bottom: 120px ;
   }
   footer{
-    height: 150px;
+    height: 120px;
   }
   input [type=text]{
     width: 60%;
   }
 }
-@media screen and (max-width: 532px) {
-  .pytania, .wynik, .navi{
+@media screen and (min-width: 342px) and (max-width: 532px) {
+  #pytania, #wynik, #navi{
     width: 80%;
     max-width: 350px;
     padding-bottom: 80px ;
@@ -31,10 +47,11 @@ html, body{
 }
 
 @media screen and (min-width:532px) and (max-width: 1200px) {
-  .pytania, .wynik, .navi{
+  #pytania, #wynik, #navi{
     width: 40%;
     min-width: 250px;
     padding-bottom: 50px;
+    min-width: 345px;
   }
   footer{
     height: 40px;
@@ -43,10 +60,11 @@ html, body{
     width: 150px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .pytania, .wynik, .navi{
+@media screen and (min-width: 1201px) {
+  #pytania, #wynik, #navi{
     width: 25%;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
+    min-width: 450px;
   }
   footer{    
     height: 40px;
@@ -56,52 +74,41 @@ html, body{
   }
 }
 
-body {
-    background-image: url('flag_brick.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center center;  
-    background-attachment: fixed;
-    clear: both;    
-    float: left;
-    width: 100%;
-    font-size: 30px;
-    font-family: Verdana;
-    color: lightgreen;
-    min-height: 100%;
-}
-
-.pytania>form>h2 {
+ /* Statyczna część strony */
+#pytania>form>h2 {
     color: plum;
     text-align:center;
-    font-family: 'Comic Sans MS';
+    font-family: 'Merriweather', serif; /* serif - czcionka szeryfowa. sans-serif - bezszeryfowa  */
     font-size: 30px;
+    font-weight: 700;
 }
-.pytania, .wynik, .navi{
+#pytania, #wynik, #navi{
   background-color: rgba(0,0,0,0.4);
   color: whitesmoke;
-  font-family: Verdana;
+  font-family: "Roboto", sans-serif;
   padding-left: 20px;  
   padding-right: 20px;
   padding-top: 0px;
 }
-.pytania {    
+#pytania {    
+    clear: both;
+    float:inline-end;
     text-align: center;
     border-radius: 30px;    
     margin: auto;    
   }
-  .pytania>form{
+  #pytania>form{
     display: inline-block;
     text-align: center;
   }
-.wynik { 
+#wynik { 
   text-align:left;
   border-radius: 30px;    
   margin: auto;
   text-transform: capitalize;
 }
 
-.navi{
+#navi{
   margin: auto;
   margin-top: 5%;
   text-align: center;
@@ -110,13 +117,18 @@ body {
   border-radius: 20px;
 }
 
-.wynik>h1{
-  color: lightblue;
+#wynik>h1{
+  color: #44F;
 }
-.wynik>input[type=button],
-.pytania>input[type=button]{
+#wynik>input[type=button],
+#pytania>input[type=button]{
   text-align: center;
   margin: auto;
+}
+#wynik>input[type=button]:hover,
+#pytania>input[type=button]:hover{
+  cursor: pointer;
+  background-color: #55F;
 }
 
 input{
@@ -130,31 +142,49 @@ input:focus[type=text]{
   width: 95%;
 }
 
-.wynik>form>input[type = 'submit'],
-.pytania>form>input[type = 'submit'],
-.navi>#ANG>form>input[type = 'submit']{
+#wynik>form>input[type = 'submit'],
+#pytania>form>input[type = 'submit'],
+#navi>.ANG>form>input[type = 'submit']{
   height: 50px;
   margin: 10px;
   width: 70%;
   font-weight: bold;
+  font-family: "Merriweather";
   font-size: 35px;
 }
-.navi>#ANG>form>input[type = 'submit']{  
+#wynik>form>input[type = 'submit']:hover,
+#pytania>form>input[type = 'submit']:hover{
+  cursor: pointer;
+  background-color: #66F;
+}
+#navi>.ANG>form>input[type = 'submit']{  
   /*background-image: url(imperator.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;  
   color: #F00;
   */
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 5px black;
   font-size: 20px;
   width: 150px;
 }
 
 nav {
     text-align: left;
+    margin: 10px 15px;
+    position: fixed;
 }
 
+nav>form>input{
+  font-size: 22px;
+}
+nav>form>input:hover{
+  cursor: pointer;
+  background-color: #55F;
+}
+@media screen and (max-width: 550px) {
+  
+}
 
 footer {
     clear: both;
@@ -165,8 +195,14 @@ footer {
     text-align: center;
     bottom: 0;
     padding:0;
-    vertical-align: middle;    
+    vertical-align: middle;
+    font-family: "Merriweather", serif;
 }
-#ANG{
+.ANG{
   display: inline-flex;
+  font-family: "Merriweather", serif;
+}
+.ANG>form>input:hover{
+  cursor: pointer;
+  background-color: #55F;
 }

@@ -12,7 +12,7 @@
 
 <body>
     
-<div class = 'wynik'>
+<div id = 'wynik'>
  <h1> Oto twoje wyniki </h1>
     <?php 
 
