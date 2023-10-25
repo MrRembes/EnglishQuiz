@@ -86,16 +86,16 @@ body {
   background-color: rgba(0,0,0,0.4);
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
+  margin: auto;
   padding-left: 20px;  
   padding-right: 20px;
   padding-top: 0px;
+  border-radius: 30px;    
 }
 #pytania {    
     clear: both;
     float:inline-end;
     text-align: center;
-    border-radius: 30px;    
-    margin: auto;    
   }
   #pytania>form{
     display: inline-block;
@@ -103,18 +103,14 @@ body {
   }
 #wynik { 
   text-align:left;
-  border-radius: 30px;    
-  margin: auto;
   text-transform: capitalize;
 }
 
 #navi{
-  margin: auto;
   margin-top: 5%;
   text-align: center;
   padding: 20px;
-  vertical-align: middle; 
-  border-radius: 20px;
+  vertical-align: middle;
 }
 
 #wynik>h1{
@@ -136,11 +132,13 @@ input{
   background-color: #333;
   color: whitesmoke;
   border-radius: 10px;
+  outline: none;
 }
 
 
 input:focus[type=text]{
   width: 95%;
+  
 }
 
 #wynik>form>input[type = 'submit'],
@@ -148,10 +146,11 @@ input:focus[type=text]{
 #navi>.ANG>form>input[type = 'submit']{
   height: 50px;
   margin: 10px;
-  width: 70%;
+  width: 95%;
   font-weight: bold;
   font-family: "Merriweather";
   font-size: 35px;
+  letter-spacing: 2px;
 }
 #wynik>form>input[type = 'submit']:hover,
 #pytania>form>input[type = 'submit']:hover{

@@ -53,20 +53,19 @@
 
     echo "Uzyskane punkty: ".$points;
 
-// Powrót na główną \\
-    echo '<form action="index.php" method="post">';
-
-    echo "<input type='submit' value='Powrót' />";
-    
-    echo "</form>";
-
-// Code by Najdz3l & MrRembes \\
     ?>
+    <form action="javascript:history.back()" method="post">
+    <input type='submit' value='Jeszcze Raz' />
+    </form>
+    <form action="index.php" method="post">
+    <input type='submit' value='Strona Tytułowa' />
+    </form>
+    
     </div>
     
     <footer>
     <a> Powered by MrRembes and Najdz3l </a>
 </footer>
+
 </body>
 </html>
-
