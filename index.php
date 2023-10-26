@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>index</title>
+    <title>Quiz z Angielskiego</title>
     <meta name="description" content="opis" />
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />

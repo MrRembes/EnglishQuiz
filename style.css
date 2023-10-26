@@ -9,8 +9,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;  
     background-attachment: fixed;
-    clear: both;    
-    float: left;
     width: 100%;
     font-size: 30px;
     font-family: "Roboto";

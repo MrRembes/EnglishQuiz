@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>index</title>
+    <title>Quiz termin 19.09.23</title>
     <meta name="description" content="opis" />
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
@@ -24,6 +24,7 @@
     </form>
 
 </nav>
+<div style='clear:both'></div>
 
 <body>
 
@@ -139,6 +140,8 @@
 
 // Code by Najdz3l & MrRembes \\
     ?>
+    
+<div style='clear:both'></div>
 
 <footer>
     <a> Powered by MrRembes and Najdz3l</a>
