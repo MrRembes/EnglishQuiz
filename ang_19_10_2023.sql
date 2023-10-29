@@ -103,7 +103,7 @@ INSERT INTO `ang_19_10_2023` (`id`, `słówko`, `popr.odp_1`, `popr.odp_2`) VALU
 (62, 'Rubber gloves', 'gumowe rękawiczki', NULL),
 (63, 'Shopping bag', 'torba na zakupy', NULL),
 (64, 'Sponge', 'gąbka', NULL),
-(65, 'Sweep the floor', 'zamiatać podłogę'),
+(65, 'Sweep the floor', 'zamiatać podłogę', NULL),
 (66, 'Tea towel', 'ścierka', NULL),
 --
 -- Indeksy dla zrzutów tabel
