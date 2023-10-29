@@ -1,6 +1,6 @@
 html, body{
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 ;
   height: 100%;
 }
 body {
@@ -14,8 +14,7 @@ body {
     font-family: "Roboto";
     color: lightgreen;
     min-height: 100%;
-}
-
+}                                                                                                  /* NAPRAWIĆ COLAPSING MARGIN W BODY */
 /* RESPONSYWNA CZĘŚĆ STRONY */
 @media screen and (max-width: 342px) {
   #pytania, #wynik, #navi{
@@ -103,10 +102,12 @@ body {
 }
 
 #navi{
-  margin-top: 5%;
   text-align: center;
   padding: 20px;
-  vertical-align: middle;
+  align-self: center;
+}
+#navi>h2{
+  letter-spacing: 2px;
 }
 
 #wynik>h1{
@@ -204,4 +205,11 @@ footer {
 .ANG>form>input:hover{
   cursor: pointer;
   background-color: #55F;
+}
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  min-height: 100% ;
 }

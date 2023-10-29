@@ -17,6 +17,7 @@
 
 </head>
 <body>
+<div id = "wrapper">
     <div id = "navi">
         <h2> Ang 19.09.23: </h2>
             <div class = ANG>
@@ -51,11 +52,14 @@
                 <input type="submit" value="PL -> ANG">
             </form>
             </div>
+            <div style="clear:both"></div>
+    </div>
+    <div style="clear:both"></div>
 </div>
 
 <footer>
     <a> Powered by MrRembes and Najdz3l</a>
 </footer>
-
+</body>
 
 </html>

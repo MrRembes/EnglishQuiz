@@ -27,7 +27,7 @@
 <div style='clear:both'></div>
 
 <body>
-
+<div id = "wrapper">
     <?php
     
     // losowanie \\
@@ -142,6 +142,7 @@
     ?>
     
 <div style='clear:both'></div>
+</div>
 
 <footer>
     <a> Powered by MrRembes and Najdz3l</a>
