@@ -61,7 +61,7 @@ body {
   #pytania, #wynik, #navi{
     width: 25%;
     padding-bottom: 50px;
-    min-width: 450px;
+    min-width: 743px;
   }
   footer{    
     height: 40px;
@@ -97,7 +97,7 @@ body {
     text-align: center;
   }
 #wynik { 
-  text-align:left;
+  text-align: center;
   text-transform: capitalize;
 }
 

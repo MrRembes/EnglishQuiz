@@ -14,6 +14,13 @@
 <div id = "wrapper">
     <div id = 'wynik'>
         <h1> Oto twoje wyniki </h1>
+            <table>
+                <tr>
+                    <th>Słowo</th>
+                    <th>Odpowiedź</Th>
+                    <th>Poprawna Odpowiedź</Th>
+                    <th>Poprawna Odpowiedź 2</Th>
+                </tr>
         <?php 
 
         session_start();
@@ -26,8 +33,7 @@
         $odpowiedzi = array();
 
         for ($i = 0; $i < $ilosc_pytan; $i++) {
-            array_push ($odpowiedzi, $_POST["odpowiedz$i"]);
-            
+            array_push ($odpowiedzi, $_POST["odpowiedz$i"]);            
         }
 
     // Zmiena stringa na małe litery \\
@@ -41,16 +47,22 @@
     // Zliczanie uzyskanych puntków \\
         $points = 0;
 
-        for ($i = 0; $i < $ilosc_pytan; $i++) {
+        for ($i = 0; $i < $ilosc_pytan; $i++) {            
+            echo "<tr>";
             if (($odpowiedzi[$i] == $popr_odp[$i]) || ($odpowiedzi[$i] == $popr_odp_2[$i])) {
             $points++;
-            echo $slowo[$i].": "."<span style = 'color:green'>".$odpowiedzi[$i]."</span><br />";
+            echo "<td> $slowo[$i] :</td>";
+            echo "<td> <span style = 'color: #00FF00'>".$odpowiedzi[$i]."</span></td>";
             }
             else {
-                echo $slowo[$i].": "."<span style = 'color:red'>".$odpowiedzi[$i]."</span>, ".$popr_odp[$i].", ".$popr_odp_2[$i]."<br />";
+                echo "<td>$slowo[$i]:</td>";
+                echo "<td><span style = 'color:red'>".$odpowiedzi[$i]."</span></td>";
+                echo "<td>$popr_odp[$i]</td>";
+                echo "<td>$popr_odp_2[$i]</td>";
             }
+            echo "</tr>";
         }
-
+        echo "</table>";
         echo "Uzyskane punkty: ".$points;
         ?>
 
