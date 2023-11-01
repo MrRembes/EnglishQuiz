@@ -127,9 +127,9 @@
     echo "</form></div></center>";
 
 // echo "<button type='button'>".$popr_odp[$i]."</button>";
-// $fstchar = mb_substr($popr_odp[$i], 0, 1);
+// $fstchar = $popr_odp[$i].substr(0, 1);
 // echo $fstchar;
-
+// mam plan mniej więcej xD
 
 // Wybór tabeli na początku \\
 // Wybór czy z ang-pl czy pl-ang \\
