@@ -99,7 +99,7 @@
     
     
     // function tip() {
-    //     $fstchar = mb_substr($popr_odp[$i], 0, 1);
+    //     $fstchar = $popr_odp[$i].substr(0, 1);
     //     return $fstchar;
     // }
 
@@ -113,7 +113,7 @@
         
 
         // Wyświetlanie pierwszej litery z popr_odp \\
-       // echo '<button onclick=" ">Podpowiedź</button>';
+        // echo '<button onclick=" ">Podpowiedź</button>';
 
         echo "<br />";
 
