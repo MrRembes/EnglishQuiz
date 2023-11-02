@@ -26,7 +26,7 @@
             </form>
             </div>
             <div class = ANG>
-            <form action="index.php">
+            <form action="19_09_23_PL-ANG.php">
                 <input type="submit" value="PL -> ANG">
             </form>
             </div>

@@ -17,9 +17,8 @@
             <table>
                 <tr>
                     <th>Słowo</th>
-                    <th>Odpowiedź</Th>
+                    <th>Twoja Odpowiedź</Th>
                     <th>Poprawna Odpowiedź</Th>
-                    <th>Poprawna Odpowiedź 2</Th>
                 </tr>
         <?php 
 
@@ -29,6 +28,7 @@
         $popr_odp = $_SESSION['popr_odp'] ;
         $popr_odp_2 = $_SESSION['popr_odp2'];
         $ilosc_pytan = $_SESSION['ilosc_pytan'];
+        $angpl = $_SESSION['angpl'];
 
         $odpowiedzi = array();
 
@@ -51,15 +51,20 @@
             echo "<tr>";
             if (($odpowiedzi[$i] == $popr_odp[$i]) || ($odpowiedzi[$i] == $popr_odp_2[$i])) {
             $points++;
-            echo "<td> $slowo[$i] :</td>";
+            echo "<td> $slowo[$i]:</td>";
             echo "<td> <span style = 'color: #00FF00'>".$odpowiedzi[$i]."</span></td>";
+            echo "<td> $odpowiedzi[$i]</td>";
             }
             else {
                 echo "<td>$slowo[$i]:</td>";
                 echo "<td><span style = 'color:red'>".$odpowiedzi[$i]."</span></td>";
-                echo "<td>$popr_odp[$i]</td>";
-                echo "<td>$popr_odp_2[$i]</td>";
-            }
+                echo "<td>$popr_odp[$i]";
+                
+                if (($popr_odp_2[$i] != NULL) && $angpl) {
+                    echo " / $popr_odp_2[$i]";
+                }
+                    echo "</td>";
+                }
             echo "</tr>";
         }
         echo "</table>";
