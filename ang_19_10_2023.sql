@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Paź 21, 2023 at 12:08 AM
+-- Generation Time: Lis 02, 2023 at 02:48 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `ang_19_10_2023` (
   `id` int(3) NOT NULL,
-  `słówko` varchar(50) NOT NULL,
-  `popr.odp_1` varchar(50) NOT NULL,
+  `słówko` varchar(50) DEFAULT NULL,
+  `popr.odp_1` varchar(50) DEFAULT NULL,
   `popr.odp_2` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -71,7 +71,7 @@ INSERT INTO `ang_19_10_2023` (`id`, `słówko`, `popr.odp_1`, `popr.odp_2`) VALU
 (30, 'Lawn', 'Trawnik', NULL),
 (31, 'Lift', 'Winda', NULL),
 (32, 'Living room', 'Salon', NULL),
-(33, 'Loft' , 'Strych' , 'Poddasze'),
+(33, 'Loft', 'Strych', 'Poddasze'),
 (34, 'Porch', 'Ganek', NULL),
 (35, 'Roof', 'Dach', NULL),
 (36, 'Shed', 'Szopa', NULL),
@@ -79,7 +79,7 @@ INSERT INTO `ang_19_10_2023` (`id`, `słówko`, `popr.odp_1`, `popr.odp_2`) VALU
 (38, 'Steps', 'Schodki', NULL),
 (39, 'Study', 'Gabinet', NULL),
 (40, 'Upstairs', 'Na górze', NULL),
-(41, 'Yard', 'Dziedziniec' , 'Podwórko'),
+(41, 'Yard', 'Dziedziniec', 'Podwórko'),
 (42, 'Brush', 'Szczotka', NULL),
 (43, 'Change the sheets', 'Zmienić pościel', NULL),
 (44, 'Dustpan', 'Szufelka', NULL),
@@ -104,7 +104,8 @@ INSERT INTO `ang_19_10_2023` (`id`, `słówko`, `popr.odp_1`, `popr.odp_2`) VALU
 (63, 'Shopping bag', 'Torba na zakupy', NULL),
 (64, 'Sponge', 'Gąbka', NULL),
 (65, 'Sweep the floor', 'Zamiatać podłogę', NULL),
-(66, 'Tea towel', 'Ścierka', NULL),
+(66, 'Tea towel', 'Ścierka', NULL);
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -123,7 +124,7 @@ ALTER TABLE `ang_19_10_2023`
 -- AUTO_INCREMENT for table `ang_19_10_2023`
 --
 ALTER TABLE `ang_19_10_2023`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

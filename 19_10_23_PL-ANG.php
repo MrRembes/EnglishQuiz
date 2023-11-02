@@ -33,7 +33,7 @@
     session_start();
 
     $db = new mysqli('localhost', 'root', '', 'angielski_slowka'); // Łączenie z bazą danych \\
-    $table = "ang_19_09_2023";
+    $table = "ang_19_10_2023";
 
     $q = "SELECT count(*) FROM $table"; // Tabela z której bierze dane \\
     $result = $db->query($q);
@@ -138,11 +138,6 @@
     }
     echo "<br /><input type='submit' value='Wyślij' />";
     echo "</form></div></center>";
-
-// echo "<button type='button'>".$popr_odp[$i]."</button>";
-// $fstchar = mb_substr($popr_odp[$i], 0, 1);
-// echo $fstchar;
-
 
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
 

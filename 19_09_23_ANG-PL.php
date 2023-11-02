@@ -133,12 +133,8 @@
 // echo $fstchar;
 // mam plan mniej więcej xD
 
-// Wybór tabeli na początku \\
-// Wybór czy z ang-pl czy pl-ang \\
-// Zrobić CSS \\
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
-// W wyniki.php niech wyswietla pierwsza litere z slowo i poprawne odpowiedzi z duzej \\
-// github \\
+
 
 // Code by Najdz3l & MrRembes \\
     ?>

@@ -30,14 +30,14 @@
                 <input type="submit" value="PL -> ANG">
             </form>
             </div>
-        <h2> Ang 00.00.00: </h2>
+        <h2> Ang 19.10.23: </h2>
             <div class = ANG>
-            <form action="index.php">
+            <form action="19_10_23_ANG-PL.php">
                 <input type="submit" value="ANG -> PL">
             </form>
             </div>
             <div class = ANG>
-            <form action="index.php">
+            <form action="19_10_23_PL-ANG.php">
                 <input type="submit" value="PL->ANG">
             </form>
             </div>
