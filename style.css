@@ -1,6 +1,6 @@
 html, body{
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 ;
   height: 100%;
 }
 body {
@@ -9,15 +9,12 @@ body {
     background-repeat: no-repeat;
     background-position: center center;  
     background-attachment: fixed;
-    clear: both;    
-    float: left;
     width: 100%;
     font-size: 30px;
     font-family: "Roboto";
     color: lightgreen;
     min-height: 100%;
-}
-
+}                                                                                                  /* NAPRAWIĆ COLAPSING MARGIN W BODY */
 /* RESPONSYWNA CZĘŚĆ STRONY */
 @media screen and (max-width: 342px) {
   #pytania, #wynik, #navi{
@@ -64,7 +61,7 @@ body {
   #pytania, #wynik, #navi{
     width: 25%;
     padding-bottom: 50px;
-    min-width: 450px;
+    min-width: 743px;
   }
   footer{    
     height: 40px;
@@ -86,35 +83,31 @@ body {
   background-color: rgba(0,0,0,0.4);
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
+  margin: auto;
   padding-left: 20px;  
   padding-right: 20px;
   padding-top: 0px;
+  border-radius: 30px;    
 }
-#pytania {    
-    clear: both;
-    float:inline-end;
+#pytania {
     text-align: center;
-    border-radius: 30px;    
-    margin: auto;    
   }
   #pytania>form{
     display: inline-block;
     text-align: center;
   }
 #wynik { 
-  text-align:left;
-  border-radius: 30px;    
-  margin: auto;
+  text-align: center;
   text-transform: capitalize;
 }
 
 #navi{
-  margin: auto;
-  margin-top: 5%;
   text-align: center;
   padding: 20px;
-  vertical-align: middle; 
-  border-radius: 20px;
+  align-self: center;
+}
+#navi>h2{
+  letter-spacing: 2px;
 }
 
 #wynik>h1{
@@ -133,13 +126,16 @@ body {
 
 input{
   padding: 5px;
-  background-color: #eee;
+  background-color: #333;
+  color: whitesmoke;
   border-radius: 10px;
+  outline: none;
 }
 
 
 input:focus[type=text]{
   width: 95%;
+  
 }
 
 #wynik>form>input[type = 'submit'],
@@ -147,10 +143,11 @@ input:focus[type=text]{
 #navi>.ANG>form>input[type = 'submit']{
   height: 50px;
   margin: 10px;
-  width: 70%;
+  width: 95%;
   font-weight: bold;
   font-family: "Merriweather";
   font-size: 35px;
+  letter-spacing: 2px;
 }
 #wynik>form>input[type = 'submit']:hover,
 #pytania>form>input[type = 'submit']:hover{
@@ -202,7 +199,17 @@ footer {
   display: inline-flex;
   font-family: "Merriweather", serif;
 }
+
+
+
 .ANG>form>input:hover{
   cursor: pointer;
   background-color: #55F;
+}
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  min-height: 100% ;
 }

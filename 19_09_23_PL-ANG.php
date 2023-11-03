@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Quiz termin 19.09.23</title>
+    <title>index</title>
     <meta name="description" content="opis" />
     <meta name="keywords" content="slowa klucz" />
     <meta http-equiv="X-YA-Compatible" content="IE=edge,chrome=1" />
@@ -24,10 +24,9 @@
     </form>
 
 </nav>
-<div style='clear:both'></div>
 
 <body>
-<div id = "wrapper">
+
     <?php
     
     // losowanie \\
@@ -82,40 +81,52 @@
     }
 
     for($i=0; $i < $ilosc_pytan; $i++) {
-        $popr_odp[$i] = strtolower($popr_odp[$i]);
-        $popr_odp_2[$i] = strtolower($popr_odp_2[$i]);
+        $slowo[$i] = strtolower($slowo[$i]);
     }
 
     ?>
 <?php 
     //formulash \\
-    $angpl = true;
-    $_SESSION['slowo'] = $slowo;
-    $_SESSION['popr_odp'] = $popr_odp;
-    $_SESSION['popr_odp2'] = $popr_odp_2;
-    $_SESSION['ilosc_pytan'] = $ilosc_pytan;
-    $_SESSION['angpl'] = $angpl;
     echo "<div id = 'pytania'>";
     echo '<form action="wyniki.php" method="post">';
-    echo "<h2>Przetłumacz na polski: </h2>";
+    echo "<h2>Przetłumacz na angielski: </h2>";
     
-    
-    // function tip() {
-    //     $fstchar = $popr_odp[$i].substr(0, 1);
-    //     return $fstchar;
-    // }
+    $losowanie = array();
 
     for ($i = 0; $i < $ilosc_pytan; $i++) {
     
         echo $i+1;
         echo '. ';
 
-        print_r ($slowo[$i]); 
-        echo "&nbsp";
-        
+        if ($popr_odp_2[$i] != NULL) {
+            
+            $los = rand(1, 2);
+            
+                if ($los == 1) {
+                    print_r ($popr_odp[$i]);
+                    echo "&nbsp";
+                }
+                else {
+                    print_r ($popr_odp_2[$i]);
+                    echo "&nbsp";
+                    array_slice ($popr_odp, $i, 1);
+                    array_splice ($popr_odp, $i, 0, $popr_odp_2[$i]);
+                }
+        }
+        else {
+            print_r ($popr_odp[$i]);
+            echo "&nbsp";
+        }
+
+    $angpl = false;
+    $_SESSION['slowo'] = $popr_odp;
+    $_SESSION['popr_odp'] = $slowo;
+    $_SESSION['popr_odp2'] = $popr_odp_2;
+    $_SESSION['ilosc_pytan'] = $ilosc_pytan;
+    $_SESSION['angpl'] = $angpl;
 
         // Wyświetlanie pierwszej litery z popr_odp \\
-        // echo '<button onclick=" ">Podpowiedź</button>';
+       // echo '<button onclick=" ">Podpowiedź</button>';
 
         echo "<br />";
 
@@ -129,18 +140,14 @@
     echo "</form></div></center>";
 
 // echo "<button type='button'>".$popr_odp[$i]."</button>";
-// $fstchar = $popr_odp[$i].substr(0, 1);
+// $fstchar = mb_substr($popr_odp[$i], 0, 1);
 // echo $fstchar;
-// mam plan mniej więcej xD
+
 
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
 
-
 // Code by Najdz3l & MrRembes \\
     ?>
-    
-<div style='clear:both'></div>
-</div>
 
 <footer>
     <a> Powered by MrRembes and Najdz3l</a>

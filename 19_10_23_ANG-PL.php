@@ -34,7 +34,7 @@
     session_start();
 
     $db = new mysqli('localhost', 'root', '', 'angielski_slowka'); // Łączenie z bazą danych \\
-    $table = "ang_19_09_2023";
+    $table = "ang_19_10_2023";
 
     $q = "SELECT count(*) FROM $table"; // Tabela z której bierze dane \\
     $result = $db->query($q);
@@ -134,7 +134,6 @@
 // mam plan mniej więcej xD
 
 // Dodać przycisk podpowiedzi pokazujący pierwszą litere \\
-
 
 // Code by Najdz3l & MrRembes \\
     ?>
