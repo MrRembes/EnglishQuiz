@@ -113,6 +113,13 @@ body {
 #wynik>h1{
   color: #44F;
 }
+td, th {
+  border: 1px solid seashell;
+  padding: 5px;
+}
+table {
+  border-collapse: collapse;
+}
 #wynik>input[type=button],
 #pytania>input[type=button]{
   text-align: center;
