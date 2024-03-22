@@ -30,6 +30,11 @@
                 <input type="submit" value="PL -> ANG">
             </form>
             </div>
+            <div class = ANG>
+            <form action="19_09_23_slownik.php">
+                <input type="submit" value="Słowik">
+            </form>
+            </div>
         <h2> Ang 19.10.23: </h2>
             <div class = ANG>
             <form action="19_10_23_ANG-PL.php">
@@ -41,7 +46,12 @@
                 <input type="submit" value="PL->ANG">
             </form>
             </div>
-        <h2> Ang 00.00.00: </h2>
+            <div class = ANG>
+            <form action="19_10_23_slownik.php">
+                <input type="submit" value="Słowik">
+            </form>
+            </div>
+        <h2> Coming Soon! </h2>
             <div class = ANG>
             <form action="index.php">
                 <input type="submit" value="ANG -> PL">
@@ -50,6 +60,11 @@
             <div class = ANG>
             <form action="index.php">
                 <input type="submit" value="PL -> ANG">
+            </form>
+            </div>
+            <div class = ANG>
+            <form action="index.php">
+                <input type="submit" value="Słowik">
             </form>
             </div>
             <div style="clear:both"></div>
